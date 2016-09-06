@@ -5,7 +5,7 @@
  * tests.
  * 
  * @see Winner-ReadMe.txt for details on how to complete this program.
- * @author insert-your-netid-here
+ * @author mpa2
  * 
  */
 public class Winner {
@@ -15,10 +15,22 @@ public class Winner {
 		int a = TextIO.getlnInt();
 		int b = TextIO.getlnInt();
 		int c = TextIO.getlnInt();
-
-		TextIO.put("1st Place:");
-		if (a > b && a > c)
-			TextIO.putln("wow");
+		
+		System.out.print("1st Place:");
+		
+		if(a > b && a > c){
+			System.out.print("a");
+		}
+		
+		if(b > a && b > c){
+			System.out.print("b");
+		}
+		
+		if(c > a && c > b){
+			System.out.print("c");
+		}
+		
+		
 		// the logic and text output need further work...
 	}
 }
